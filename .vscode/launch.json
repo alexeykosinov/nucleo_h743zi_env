@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceFolder}/target/thumbv7em-none-eabihf/debug/main",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "svdFile": "${workspaceFolder}/stm32h743x.svd",
+            // "showDevDebugOutput": true,
+            "preLaunchTask": "Cargo Build Debug",
+            "preLaunchCommands": [
+                "monitor arm semihosting enable",
+                "load"
+            ],
+            "postLaunchCommands": [],
+            "postRestartCommands": [],
+            "configFiles": [
+                "openocd.cfg"
+            ],
+        }
+    ]
+}

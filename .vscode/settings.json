@@ -1,0 +1,30 @@
+{
+    "editor.formatOnSave": true,
+    "rust.target": "thumbv7em-none-eabihf",
+    "rust.all_targets": false,
+    "files.exclude": {
+        "*.code-workspace": true,
+        "*.lock": true,
+        "*.svd": true,
+        ".gitignore": true,
+        ".cargo": true,
+        "target/rls/**": true,
+        "target/debug/**": true,
+        "target/release/**": true,
+        "target/*.*": true,
+        "target/thumbv7em-none-eabihf/*.*": true,
+        "target/thumbv7em-none-eabihf/debug/*.*": true,
+        "target/thumbv7em-none-eabihf/debug/build/**": true,
+        "target/thumbv7em-none-eabihf/debug/deps/**": true,
+        "target/thumbv7em-none-eabihf/debug/examples/**": true,
+        "target/thumbv7em-none-eabihf/debug/incremental/**": true,
+        "target/thumbv7em-none-eabihf/release/*.d": true,
+        "target/thumbv7em-none-eabihf/release/.fingerprint": true,
+        "target/thumbv7em-none-eabihf/release/.cargo-lock": true,
+        "target/thumbv7em-none-eabihf/release/build/**": true,
+        "target/thumbv7em-none-eabihf/release/deps/**": true,
+        "target/thumbv7em-none-eabihf/release/examples/**": true,
+		"target/thumbv7em-none-eabihf/release/incremental/**": true,	
+        ".vscode/**": true
+    }
+}

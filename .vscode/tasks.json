@@ -1,0 +1,49 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        /* Release */
+        {
+            "label": "Cargo Build Release",
+            "type": "shell",
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "command": "cargo",
+            "args": [
+                "build",
+                "--release"
+            ]
+        },
+        {
+            "label": "Build Release",
+            "type": "shell",
+            "command": "arm-none-eabi-objcopy",
+            "args": [
+                "-O",
+                "binary",
+                "${workspaceFolder}/target/thumbv7em-none-eabihf/release/main",
+                "${workspaceFolder}/target/thumbv7em-none-eabihf/release/main.bin"
+            ],
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": "Cargo Build Release"
+        },
+        /* Debug */
+        {
+            "label": "Cargo Build Debug",
+            "type": "shell",
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "command": "cargo",
+            "args": [
+                "build"
+            ]
+        },
+    ]
+}
