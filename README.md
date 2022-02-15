@@ -6,6 +6,13 @@
 - OpenOCD x64 0.11.0+dev;
 - GNU Arm Embedded Toolchain 10.3-2021.10 x32.
 
+Before, don't forget:
+```
+cargo install cargo-binutils
+rustup component add llvm-tools-preview
+rustup target add thumbv7em-none-eabi
+```
+
 Availiable tasks: release (default: ctrl+B) or debug.
 To use debug mode (F5): insert breakpoint -> start debugging.
 
