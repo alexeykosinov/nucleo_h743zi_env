@@ -10,7 +10,7 @@ Before, don't forget:
 ```
 cargo install cargo-binutils
 rustup component add llvm-tools-preview
-rustup target add thumbv7em-none-eabi
+rustup target add thumbv7em-none-eabihf
 ```
 
 Availiable tasks: release (default: ctrl+B) or debug.
