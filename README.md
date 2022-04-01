@@ -13,7 +13,7 @@ rustup component add llvm-tools-preview
 rustup target add thumbv7em-none-eabihf
 ```
 
-Availiable tasks: release (default: ctrl+B) or debug.
+Avaliable tasks: release (default: ctrl+B) or debug.
 To use debug mode (F5): insert breakpoint -> start debugging.
 
 Tested on NUCLEO-H743ZI development board (simple hello-world example included)
